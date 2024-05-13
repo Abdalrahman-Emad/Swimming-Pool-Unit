@@ -3,14 +3,20 @@
   "version": "3.5.0",
   "private": true,
   "author": {
-    "name": "Abdularhaman Emad",
-    "email": "abdalarhamanemad.48@gmail.com"
+    "name": "CodedThemes",
+    "email": "CodedThemes@gmail.com",
+    "url": "https://codedthemes.com/"
   },
+  "homepage": "https://berrydashboard.io/free",
   "scripts": {
     "dev": "vite",
+    "start": "env-cmd -f .env vite",
     "build": "vite build",
-    "preview": "vite preview"
-},
+    "preview": "vite preview",
+    "lint": "eslint \"src/**/*.{js,jsx,ts,tsx}\"",
+    "lint:fix": "eslint --fix \"src/**/*.{js,jsx,ts,tsx}\"",
+    "prettier": "prettier --write \"src/**/*.{js,jsx,ts,tsx}\""
+  },
   "dependencies": {
     "@emotion/cache": "^11.11.0",
     "@emotion/react": "^11.11.3",
@@ -20,8 +26,7 @@
     "@fontsource/roboto": "^5.0.8",
     "@mui/icons-material": "^5.15.10",
     "@mui/lab": "^5.0.0-alpha.165",
-    "@mui/material": "^5.15.17",
-    "@mui/styles": "^5.15.17",
+    "@mui/material": "^5.15.10",
     "@mui/system": "^5.15.9",
     "@mui/utils": "^5.15.11",
     "@reduxjs/toolkit": "^2.2.1",
