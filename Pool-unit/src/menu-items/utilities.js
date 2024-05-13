@@ -8,7 +8,7 @@ import TrainerIcon from '@mui/icons-material/Person';
 import TraineeIcon from '@mui/icons-material/Group';
 import AssignmentIcon from '@mui/icons-material/Assignment';
 import LocalAtmIcon from '@mui/icons-material/LocalAtm';
-
+import CalendarIcon from '@mui/icons-material/CalendarToday'; // Add this import
 
 // constant
 const icons = {
@@ -20,8 +20,8 @@ const icons = {
   TrainerIcon,
   TraineeIcon,
   AssignmentIcon,
-  LocalAtmIcon
-
+  LocalAtmIcon,
+  CalendarIcon // Add the CalendarIcon to the icons object
 };
 
 // ==============================|| Tasks MENU ITEMS ||============================== //
@@ -47,7 +47,6 @@ const Tasks = {
       icon: icons.PoolIcon,
       breadcrumbs: false
     },
-
     {
       id: 'lane',
       title: 'Lane',
@@ -78,7 +77,6 @@ const Tasks = {
       type: 'item',
       url: '/utils/training-types',
       icon: icons.AssignmentIcon,
-      // icon: <AssignmentIcon />,
       breadcrumbs: false
     },
     {
@@ -86,17 +84,23 @@ const Tasks = {
       title: 'Training Pricing',
       type: 'item',
       url: '/utils/training-pricing',
-      icon:icons.LocalAtmIcon,
-      // icon: <LocalAtmIcon />,
+      icon: icons.LocalAtmIcon,
       breadcrumbs: false
     },
-
     {
       id: 'trainee',
       title: 'Trainee',
       type: 'item',
       url: '/utils/trainee',
       icon: icons.TraineeIcon,
+      breadcrumbs: false
+    },
+    {
+      id: 'calendar',
+      title: 'Calendar',
+      type: 'item',
+      url: '/utils/calendar',
+      icon: icons.CalendarIcon, // Use CalendarIcon here
       breadcrumbs: false
     }
   ]

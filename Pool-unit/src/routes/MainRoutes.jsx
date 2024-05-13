@@ -5,6 +5,7 @@ import TrainingTypes from '../views/utilities/TrainingTypes';
 import TrainingPricing from '../views/utilities/TrainingPricing';
 import Login from '../views/pages/Auth/Login'; 
 import Register from '../views/pages/Auth/Register';
+import { element } from 'prop-types';
 
 // Lazy-loaded components
 const DashboardDefault = Loadable(lazy(() => import('../views/dashboard')));
@@ -14,6 +15,8 @@ const Trainee = Loadable(lazy(() => import('../views/utilities/Trainee')));
 const Pool = Loadable(lazy(() => import('../views/utilities/Pool')));
 const Level = Loadable(lazy(() => import('../views/utilities/Level')));
 const Place = Loadable(lazy(() => import('../views/utilities/Place')));
+const Calender = Loadable(lazy(() => import('../views/Calendar/Calender')));
+
 
 // Main routes definition
 const MainRoutes = {
@@ -75,6 +78,11 @@ const MainRoutes = {
         {
           path: 'register',
           element: <Register />
+        },
+
+        {
+          path:'calendar',
+          element:<Calender/> 
         }
       ]
     },
