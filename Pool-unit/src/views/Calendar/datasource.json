@@ -4562,7 +4562,7 @@
         },
         {
             "Id": 29,
-            "Subject": "Training session on JSP",
+            "Subject": "Training session",
             "Description": "Knowledge sharing on JSP topics.",
             "StartTime": "2021-08-02T11:30:00.000Z",
             "EndTime": "2021-08-02T14:30:00.000Z",
@@ -4570,7 +4570,7 @@
         },
         {
             "Id": 30,
-            "Subject": "Sprint Planning with Team members",
+            "Subject": "Swimming Competition",
             "Description": "Planning tasks for sprint.",
             "StartTime": "2021-08-02T05:00:00.000Z",
             "EndTime": "2021-08-02T06:30:00.000Z",
@@ -4594,7 +4594,7 @@
         },
         {
             "Id": 33,
-            "Subject": "Training session on C#",
+            "Subject": "Swimming Competition",
             "Description": "Training session",
             "StartTime": "2021-08-02T09:00:00.000Z",
             "EndTime": "2021-08-02T10:30:00.000Z",

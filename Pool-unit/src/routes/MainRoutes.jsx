@@ -3,9 +3,10 @@ import MainLayout from '../layout/MainLayout';
 import Loadable from '../ui-component/Loadable';
 import TrainingTypes from '../views/utilities/TrainingTypes';
 import TrainingPricing from '../views/utilities/TrainingPricing';
-import Login from '../views/pages/Auth/Login'; 
+import Login from '../views/pages/Auth/Login';
 import Register from '../views/pages/Auth/Register';
 import { element } from 'prop-types';
+import ResetPassword from '../views/pages/Auth/ResetPassword';
 
 // Lazy-loaded components
 const DashboardDefault = Loadable(lazy(() => import('../views/dashboard')));
@@ -37,6 +38,21 @@ const MainRoutes = {
       ]
     },
     {
+      path: 'login',
+      element: <Login />
+    },
+    {
+      path: 'register',
+      element: <Register />
+    },
+    {
+      path: 'reset-password',
+      element: <ResetPassword/>
+    },
+
+
+
+    {
       path: 'utils',
       children: [
         {
@@ -65,24 +81,16 @@ const MainRoutes = {
         },
         {
           path: 'training-types',
-          element: <TrainingTypes/>
+          element: <TrainingTypes />
         },
         {
           path: 'training-pricing',
-          element: <TrainingPricing/>
-        },
-        {
-          path: 'login',
-          element: <Login />
-        },
-        {
-          path: 'register',
-          element: <Register />
+          element: <TrainingPricing />
         },
 
         {
-          path:'calendar',
-          element:<Calender/> 
+          path: 'calendar',
+          element: <Calender />
         }
       ]
     },
